@@ -1,7 +1,7 @@
 import express from "express";
 
-import { adminOnly } from "../middleware/auth.js";
-import { singleUpload } from "../middleware/multer.js";
+import { adminOnly } from "../middlewares/auth.js";
+import { singleUpload } from "../middlewares/multer.js";
 import { deleteProduct, getAdminProducts, getAllCategories, getAllProduct, getSingleProduct, getlatestProducts, newProduct,  updateProduct } from "../controller/product.js";
 
 const app = express.Router();
